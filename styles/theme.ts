@@ -1,3 +1,5 @@
+"use client"
+
 import { PaletteOptions, createTheme } from "@mui/material/styles";
 
 export const BASE_PALETTE = {
