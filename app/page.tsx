@@ -12,7 +12,7 @@ const mockLots: Lot[] = [{
   status: "OPEN",
   owner_id: 1
 }, {
-  id: "0", title: "title",
+  id: "1", title: "title",
   description: "string",
   price: 466,
   close_time: "today",
