@@ -57,7 +57,7 @@ export default function Home() {
       <Stack width="100%" sx={{ mx: 20, mt: 2 }}>
         <Grid spacing={4} container>
           {mockLots.map((x) => (
-            <LotPreview lot={x} />
+            <LotPreview lot={x} key={x.id} />
           ))}
         </Grid>
       </Stack>
