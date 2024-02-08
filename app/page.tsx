@@ -3,16 +3,11 @@ import { LotPreview } from "@/components/LotPreview";
 import { SearchBar } from "@/components/SearchBar";
 import { Lot } from "@/definitions/Lot";
 import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
   Box,
   Grid,
-  Stack,
-  Typography,
+  Stack
 } from "@mui/material";
 import { useState } from "react";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const mockLots: Lot[] = [
   {
@@ -20,20 +15,20 @@ const mockLots: Lot[] = [
     title: "title",
     description: "string",
     price: 466,
-    close_time: "today",
+    close_time: 4,
     photo: [],
     status: "OPEN",
-    owner_id: 1,
+    owner_id: "1",
   },
   {
     id: "1",
     title: "title",
     description: "string",
     price: 466,
-    close_time: "today",
+    close_time: 4,
     photo: [],
     status: "OPEN",
-    owner_id: 1,
+    owner_id: "1",
   },
 ];
 

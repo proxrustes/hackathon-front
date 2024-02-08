@@ -1,8 +1,6 @@
 import { LotStatus } from "./LotStatus";
 
 export type Lot = {
-    name: string;
-    email: string;
     id: string;
     title: string;
     description: string;
