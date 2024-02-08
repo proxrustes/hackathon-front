@@ -1,7 +1,6 @@
 import { Header } from "@/components/Header";
 import { Providers } from "@/components/Providers";
 import { lightTheme } from "@/styles/theme";
-import { Container } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import type { Metadata } from "next";
 
@@ -19,8 +18,11 @@ export default function RootLayout({
     <ThemeProvider theme={lightTheme}>
       <>
         <Providers>
-          <Header />
-          {children}
+          <html lang="en">
+            <body>    <Header />
+              {children}</body>
+          </html>
+
         </Providers>
       </>
     </ThemeProvider>
