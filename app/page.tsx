@@ -4,8 +4,14 @@ import { SearchBar } from "@/components/SearchBar";
 import { Lot } from "@/definitions/Lot";
 import {
   Box,
+  Button,
+  FormControl,
   Grid,
-  Stack
+  InputAdornment,
+  InputLabel,
+  OutlinedInput,
+  Stack,
+  Typography
 } from "@mui/material";
 import { useState } from "react";
 
@@ -49,7 +55,35 @@ export default function Home() {
       <Stack alignItems="center">
         <SearchBar />
       </Stack>
-      <Stack width="100%" sx={{ mx: 20, mt: 2 }}>
+
+      <Stack sx={{ mx: 20, mt: 2 }}>
+        <Stack alignItems="flex-end">
+          <Button onClick={toggleFilters} variant="outlined">Filters</Button>
+        </Stack>
+        {filtersOpen && <Stack direction="row" gap={4} 
+        sx={{mb:2}}
+        justifyContent="space-between"><Stack>
+          <InputLabel htmlFor="filter-input">Filter</InputLabel>
+            <OutlinedInput
+            fullWidth
+              id="filter-input"
+              label="Filter"
+            /></Stack>
+            <Stack><InputLabel htmlFor="filter-input">Filter</InputLabel>
+              <OutlinedInput
+            fullWidth
+                id="filter-input"
+                label="Filter"
+              /></Stack>
+            <Stack><InputLabel htmlFor="filter-input">Filter</InputLabel>
+              <OutlinedInput
+            fullWidth
+                id="filter-input"
+                label="Filter"
+              /></Stack>
+
+
+        </Stack>}
         <Grid spacing={4} container>
           {mockLots.map((x) => (
             <LotPreview lot={x} key={x.id} />
