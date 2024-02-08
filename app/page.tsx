@@ -1,8 +1,12 @@
-import { Container } from "@mui/material";
+import { SearchBar } from "@/components/SearchBar";
+import { Box, Container, Stack } from "@mui/material";
 
 export default function Home() {
   return (
-  <Container maxWidth="xl">
-  </Container>
+    <>
+      <Box sx={{ height: 60, backgroundColor: "primary.main", width: "100%" }}/>
+      <Stack alignItems="center">   <SearchBar /></Stack>
+   
+    </>
   );
 }

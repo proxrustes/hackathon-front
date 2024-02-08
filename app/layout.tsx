@@ -16,10 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <ThemeProvider theme={lightTheme}>
-      <Container maxWidth="xl">
+      <>
         <Header />
         {children}
-      </Container>
+      </>
     </ThemeProvider>
 
   );
