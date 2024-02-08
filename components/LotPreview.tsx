@@ -1,4 +1,4 @@
-import { Lot } from "@/definitions/lot";
+import { Lot } from "@/definitions/Lot";
 import { Box, Grid, Paper, Stack, Typography } from "@mui/material";
 
 export function LotPreview(props: { lot: Lot }) {

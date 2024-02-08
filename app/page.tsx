@@ -1,7 +1,7 @@
 "use client";
 import { LotPreview } from "@/components/LotPreview";
 import { SearchBar } from "@/components/SearchBar";
-import { Lot } from "@/definitions/lot";
+import { Lot } from "@/definitions/Lot";
 import {
   Accordion,
   AccordionDetails,
