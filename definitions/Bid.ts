@@ -3,8 +3,8 @@ export type Bid = {
     lot_id: string;
     price: number;
     username: string;
-    is_best: true;
-    created_at: number;
+    is_best: boolean;
+    created_at: string;
   };
 
 

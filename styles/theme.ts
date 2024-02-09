@@ -29,9 +29,6 @@ export const BASE_PALETTE = {
 } as PaletteOptions
 
 const commonThemeOptions = {
-    typography: {
-        fontFamily: "Optima nova LT"
-    },
     breakpoints: {
         values: {
             xs: 0,

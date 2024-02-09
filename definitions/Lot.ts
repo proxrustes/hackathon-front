@@ -5,9 +5,9 @@ export type Lot = {
     title: string;
     description: string;
     price: number;
-    close_time: number;
-    photo: [];
+    close_time: string;
+    photo: string[];
     status: LotStatus;
     owner_id: string;
-    created_at?: number;
+    created_at?: string;
 }
