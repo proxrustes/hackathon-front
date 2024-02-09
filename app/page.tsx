@@ -56,35 +56,38 @@ export default function Home() {
         <SearchBar />
       </Stack>
 
-      <Stack sx={{ mx: 20, mt: 2 }}>
+      <Stack sx={{ mx: 20, mt: 1 }}>
         <Stack alignItems="flex-end">
-          <Button onClick={toggleFilters} variant="outlined">Filters</Button>
+          <Button onClick={toggleFilters} variant="outlined" 
+      >Filters</Button>
         </Stack>
         {filtersOpen && <Stack direction="row" gap={4} 
-        sx={{mb:2}}
-        justifyContent="space-between"><Stack>
+        justifyContent="space-between"><Stack width="100%">
           <InputLabel htmlFor="filter-input">Filter</InputLabel>
             <OutlinedInput
             fullWidth
+            size="small"
               id="filter-input"
               label="Filter"
-            /></Stack>
-            <Stack><InputLabel htmlFor="filter-input">Filter</InputLabel>
+            /></Stack >
+            <Stack width="100%"><InputLabel htmlFor="filter-input">Filter</InputLabel>
               <OutlinedInput
             fullWidth
+            size="small"
                 id="filter-input"
                 label="Filter"
               /></Stack>
-            <Stack><InputLabel htmlFor="filter-input">Filter</InputLabel>
+            <Stack width="100%"><InputLabel htmlFor="filter-input">Filter</InputLabel>
               <OutlinedInput
             fullWidth
+            size="small"
                 id="filter-input"
                 label="Filter"
               /></Stack>
 
 
         </Stack>}
-        <Grid spacing={4} container>
+        <Grid spacing={4} container   sx={{mt:1}}>
           {mockLots.map((x) => (
             <LotPreview lot={x} key={x.id} />
           ))}

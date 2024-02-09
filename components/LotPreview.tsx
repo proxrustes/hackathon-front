@@ -2,8 +2,9 @@ import { Lot } from "@/definitions/Lot";
 import { Box, Grid, Paper, Stack, Typography } from "@mui/material";
 
 export function LotPreview(props: { lot: Lot }) {
+    //TODO:  підключить картинки
     return (
-        <Grid item xs={2}>
+        <Grid item xs={6} md={4} xl={2}>
             <a style={{ textDecoration: 'none' }} href={`/lot-overview/${props.lot.id}`}>
                 <Paper elevation={3} sx={{ cursor: 'pointer' }}>
                     <Box sx={{ width: "100%", height: 250, backgroundColor: "secondary.main" }} />
