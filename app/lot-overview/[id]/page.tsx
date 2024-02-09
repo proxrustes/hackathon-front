@@ -2,6 +2,7 @@ import { Box, Stack, Typography } from "@mui/material";
 
 export default function Page({ params }: { params: { id: string } }) {
     //TODO: fetch lot info based on params.id
+    //TODO:  підключить картинки
     const mockFetchedLotInfo = {
         id: "0", title: "title",
         description: "stringstringstringstringstring string stringstring string string string a string",
@@ -19,7 +20,6 @@ export default function Page({ params }: { params: { id: string } }) {
                 <Stack gap={4}>
                     <Typography variant="h2">{mockFetchedLotInfo.title}</Typography>
                     <Typography variant="h5">{mockFetchedLotInfo.description}</Typography>
-
                 </Stack>
             </Stack>
         </Stack>
