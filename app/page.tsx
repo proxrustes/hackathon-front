@@ -11,7 +11,7 @@ import {
   InputLabel,
   OutlinedInput,
   Stack,
-  Typography
+  Typography,
 } from "@mui/material";
 import { useState } from "react";
 
@@ -58,32 +58,31 @@ export default function Home() {
 
       <Stack sx={{ mx: 20, mt: 2 }}>
         <Stack alignItems="flex-end">
-          <Button onClick={toggleFilters} variant="outlined">Filters</Button>
+          <Button onClick={toggleFilters} variant="outlined">
+            Filters
+          </Button>
         </Stack>
-        {filtersOpen && <Stack direction="row" gap={4} 
-        sx={{mb:2}}
-        justifyContent="space-between"><Stack>
-          <InputLabel htmlFor="filter-input">Filter</InputLabel>
-            <OutlinedInput
-            fullWidth
-              id="filter-input"
-              label="Filter"
-            /></Stack>
-            <Stack><InputLabel htmlFor="filter-input">Filter</InputLabel>
-              <OutlinedInput
-            fullWidth
-                id="filter-input"
-                label="Filter"
-              /></Stack>
-            <Stack><InputLabel htmlFor="filter-input">Filter</InputLabel>
-              <OutlinedInput
-            fullWidth
-                id="filter-input"
-                label="Filter"
-              /></Stack>
-
-
-        </Stack>}
+        {filtersOpen && (
+          <Stack
+            direction="row"
+            gap={4}
+            sx={{ mb: 2 }}
+            justifyContent="space-between"
+          >
+            <Stack>
+              <InputLabel htmlFor="filter-input">Filter</InputLabel>
+              <OutlinedInput fullWidth id="filter-input" label="Filter" />
+            </Stack>
+            <Stack>
+              <InputLabel htmlFor="filter-input">Filter</InputLabel>
+              <OutlinedInput fullWidth id="filter-input" label="Filter" />
+            </Stack>
+            <Stack>
+              <InputLabel htmlFor="filter-input">Filter</InputLabel>
+              <OutlinedInput fullWidth id="filter-input" label="Filter" />
+            </Stack>
+          </Stack>
+        )}
         <Grid spacing={4} container>
           {mockLots.map((x) => (
             <LotPreview lot={x} key={x.id} />
