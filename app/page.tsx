@@ -1,7 +1,7 @@
 "use client";
 import { LotPreview } from "@/components/LotPreview";
 import { SearchBar } from "@/components/SearchBar";
-import { Lot } from "@/definitions/Lot";
+import { Lot } from "@/definitions/Lots";
 import {
   Box,
   Button,
