@@ -1,3 +1,5 @@
+"use client"
+
 import { Lot } from "@/definitions/Lot";
 import { Box, Stack, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
@@ -15,7 +17,7 @@ export default function Page({ params }: { params: { id: string } }) {
         setLot(json);
       })
     );
-  }, []);
+  }, [params.id]);
   const mockFetchedLotInfo = {
     id: "0",
     title: "title",

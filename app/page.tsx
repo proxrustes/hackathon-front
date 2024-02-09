@@ -1,17 +1,14 @@
 "use client";
 import { LotPreview } from "@/components/LotPreview";
 import { SearchBar } from "@/components/SearchBar";
-import { Lot } from "@/definitions/Lots";
+import { Lot } from "@/definitions/Lot";
 import {
   Box,
   Button,
-  FormControl,
   Grid,
-  InputAdornment,
   InputLabel,
   OutlinedInput,
   Stack,
-  Typography,
 } from "@mui/material";
 import { useState } from "react";
 
