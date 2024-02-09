@@ -27,17 +27,16 @@ export function Header() {
           </Button>
           <IconButton
             sx={{ backgroundColor: "text.primary", color: "white" }}
-            href="/create-lot"
+            href={session ? "/profile-page" : "/signin"}
           >
             <AccountCircleIcon />
           </IconButton>
-          {session && <Link href="/profile">Profile</Link>}
-          {session ? (
-            <Link href="#" onClick={() => signOut({ callbackUrl: "/" })}>
-              Sign Out
-            </Link>
-          ) : (
-            <Link href="api/auth/signin">Login</Link>
+          {session && (
+            <>
+              <Link href="#" onClick={() => signOut({ callbackUrl: "/" })}>
+                Sign Out
+              </Link>
+            </>
           )}
         </Stack>
       </Stack>
