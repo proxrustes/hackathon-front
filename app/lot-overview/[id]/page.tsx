@@ -16,7 +16,6 @@ export default function Page({ params }: { params: { id: string } }) {
       })
     );
   }, []);
-
   const mockFetchedLotInfo = {
     id: "0",
     title: "title",

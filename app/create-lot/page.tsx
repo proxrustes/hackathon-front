@@ -47,9 +47,8 @@ export default function AuctionPage() {
                         required
                         fullWidth
                         id="time"
-                        label="Time for Better Bid"
-                        type="time"
-                        defaultValue="01:00"
+                        label="Time for Better Bid (minutes)"
+                        type="number"
                         InputLabelProps={{
                             shrink: true,
                         }}
