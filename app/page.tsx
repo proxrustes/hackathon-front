@@ -1,7 +1,7 @@
 "use client";
 import { LotPreview } from "@/components/LotPreview";
 import { SearchBar } from "@/components/SearchBar";
-import { Lot } from "@/definitions/Lot";
+import { Lot } from "@/definitions/Lots";
 import {
   Box,
   Button,
@@ -11,7 +11,7 @@ import {
   InputLabel,
   OutlinedInput,
   Stack,
-  Typography
+  Typography,
 } from "@mui/material";
 import { useState } from "react";
 
@@ -88,6 +88,7 @@ export default function Home() {
 
         </Stack>}
         <Grid spacing={4} container   sx={{mt:1}}>
+
           {mockLots.map((x) => (
             <LotPreview lot={x} key={x.id} />
           ))}
