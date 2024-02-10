@@ -10,7 +10,7 @@ export function Header() {
 
   return (
     <>
-      <Stack direction="row" justifyContent="space-between" sx={{ mx: 20 }}>
+      <Stack direction="row" justifyContent="space-between" sx={{ mx: 10 }}>
         <Typography
           variant="h5"
           sx={{ fontWeight: 600, color: "text.primary" }}

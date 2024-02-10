@@ -4,7 +4,7 @@ import { Container, Box, TextField, Button, Typography, Stack } from '@mui/mater
 
 export default function AuctionPage() {
     return (
-        <Stack sx={{mx:20, mt: 4}} gap={4}>
+        <Stack sx={{mx:10, mt: 4}} gap={4}>
             <Typography variant="h4" sx={{fontWeight:800, textAlign:"center"}}>
                 What do you want to auction?
             </Typography>
